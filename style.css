@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+body {
+    background: rgb(219,0,140);
+    background: linear-gradient(68deg, rgba(219,0,140,1) 31%, rgba(255,234,0,1) 100%);
+}
+
+.message-wrapper {
+    box-shadow: rgba(50, 50, 93, 0.15) 0px 00px 60px -12px inset, rgba(0, 0, 0, 0.9) 0px 18px 36px -18px inset;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    min-height: 4rem;
+}
+
+.message {
+    letter-spacing: .3rem;
+    font-size: 1.2rem;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 2px rgb(233, 12, 12), 2px 4px 2px rgb(16, 16, 15);
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    
+}
+
+.title {
+    text-align: center;
+}
+
+
+.game-grid {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid: repeat(3, 1fr) / repeat(3, 1fr) ;
+    box-shadow: rgba(50, 50, 93, 0.55) 0px 50px 100px -20px, rgba(0, 0, 0, 0.6) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    text-shadow: 2px 2px 2px black;
+    
+}
+
+.game-grid__box {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 4rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.reset {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .2em;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: #3e3ecb;
+    color: white;
+    padding: .3em .5em;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+
+
+
+
+/* style text */
+@import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
+
+
+body { color: #fff; position: relative;}
+
+.chrome {
+    position: relative;
+    left: 0;
+    background-image: -webkit-linear-gradient(#000066 0%, #B6E8F1 46%, #ffffff76 50%, #c014a9 54%, #a620db 58%, #58114f 90%, #ece14e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 4px #f5f5f56e;
+    font-size: 100px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: italic;
+    margin: 0;
+    line-height: 1;
+}
+
+
+.chrome:before {
+    content: 'Tic Tac Toe';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, rgba(255, 255, 255, 0.815) 50%, transparent 60%, transparent 100%);
+
+    -webkit-background-clip: text;
+    -webkit-animation-name: chrome_effect;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.winner-message {
+    display: none;
+    position: absolute;
+    top: 45%;
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 5rem;
+    color: #efdaef ;
+    transform:rotate(-15deg);
+    -ms-transform:rotate(-15deg); 
+    -webkit-transform:rotate(-15deg); 
+    -webkit-text-stroke: 1px #3888de;
+    -webkit-filter: drop-shadow(2px 2px 20px #222279);
+}
+
+.winner-message--active {
+    display: block;
+}
+
+/* .windows .dreams {
+    -webkit-text-stroke: 4px #f008b7;
+} */
+
+/* 
+/* @-webkit-keyframes chrome_effect {
+    0% {background-position: 0  0;}
+
+    100% {background-position: 1000px 0;}
+} */ 
+
