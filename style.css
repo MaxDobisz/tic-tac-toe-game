@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+
 html {
     min-height: 100%;
 }
@@ -21,6 +22,10 @@ main {
     justify-content: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 .title {
     color:rgb(11, 11, 11);
     font-family: 'Titillium Web', sans-serif;
@@ -28,6 +33,7 @@ main {
     font-style: italic;
     line-height: 5rem;
     margin-top: 1rem;
+    text-align: center;
     text-shadow: 0 0 7px white, 0 0 5px rgb(169, 169, 237);
 }
 
@@ -50,23 +56,8 @@ main {
     text-shadow: 2px 2px 2px rgb(233, 16, 12), 2px 4px 2px rgb(16, 16, 15);
 }
 
-.winner-message {
-    color: #f9f4f9 ;
-    display: none;
-    font-family: 'Mr Dafoe';
-    font-size: 3rem;
-    letter-spacing: 1rem;
-    position: absolute;
-    text-shadow: 0 0 30px black ,2px 2px 15px #222279, 0 0 2px black;
-    top: 40%;
-    transform:rotate(-25deg);
-}
-
-.winner-message--active {
-    display: block;
-}
-
 .game-grid {
+    position: relative;
     box-shadow: rgba(50, 50, 93, 0.55) 0px 50px 100px -20px, rgba(0, 0, 0, 0.6) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     display: grid;
     grid: repeat(3, 1fr) / repeat(3, 1fr) ;
@@ -84,21 +75,41 @@ main {
     justify-content: center;
 }
 
+.winner-message {
+    color: #f9f4f9 ;
+    display: none;
+    font-family: 'Mr Dafoe';
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    position: absolute;
+    text-shadow: 0 0 30px black ,2px 2px 15px #222279, 0 0 2px black;
+    top: 30%;
+    left: 7%;
+    
+    transform:rotate(-25deg);
+    text-align: center;
+}
+
+.winner-message--active {
+    display: block;
+}
+
 .reset {
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: .1em;
-    font-size: 1.3rem;
-    border-radius: 10px;
+    z-index: 2;
     background-color: #5555da;
-    color: white;
-    padding: .2em .5em;
+    border-radius: 10px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: .1em;
+    padding: .2em .5em;
 }
 
 .footer {
+    color: black;
+    font-family: 'Indie Flower';
     margin-top: 2rem;
     text-align: center;
-    font-family: 'Indie Flower';
-    color: black;
 }

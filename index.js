@@ -69,7 +69,7 @@ const checkIfPlayerWinning = (gridFieldsClickedByPlayer) => {
             isWinning = true;
         }
     });
-
+    winnerMessage
     return isWinning;
 }
 
