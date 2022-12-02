@@ -81,7 +81,7 @@ const declareWinner = winner => {
     }
 
     gridFields.forEach(field => {
-        field.removeEventListener('click', fieldClickHandler)
+        field.removeEventListener('click', fieldClickHandler);
     });
 
     message.innerText = `FINISH`;
@@ -91,7 +91,7 @@ const declareWinner = winner => {
 const resetBoard = () => {
     gridFields.forEach(field => {
         field.innerText = '';
-    })
+    });
 
     gridFields.forEach(field => {
         field.addEventListener('click', fieldClickHandler);
@@ -99,7 +99,7 @@ const resetBoard = () => {
 
     playerToMove = 'X';
     message.innerText = 'CROSSES START';
-    winnerMessage.classList.remove('winner-message--active')
+    winnerMessage.classList.remove('winner-message--active');
 }
 
 resetButton.addEventListener('click', resetBoard);
