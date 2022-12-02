@@ -110,6 +110,47 @@ a {
 .footer {
     color: black;
     font-family: 'Indie Flower';
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .title {
+        margin-top: 2rem;
+        font-size: 7rem;
+    }
+    .message-wrapper {
+        margin-top: 1rem;
+        width: 500px;
+    }
+
+    .message {
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
+    .game-grid {
+        height: 500px;
+        width: 500px;
+    }
+    
+    .game-grid__box {
+        font-size: 3rem;
+    }
+
+    .game-grid__box {
+        font-size: 5rem;
+    }
+    
+    .winner-message {
+        font-size: 5rem;
+    }
+
+    .reset {
+        font-size: 2rem;
+    }
+
+    .footer {
+        font-size: 1.5rem;
+    }
 }
