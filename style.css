@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgba(255,234,0,1);
+    background-color: rgb(251, 223, 7);
     color: white;
 }
 
@@ -22,14 +22,14 @@ a {
 }
 
 .title {
-    color:rgb(11, 11, 11);
+    color:rgb(234, 4, 126);
     font-family: 'Titillium Web', sans-serif;
     font-size: 5rem;
     font-style: italic;
     line-height: 5rem;
     margin-top: 1rem;
     text-align: center;
-    text-shadow: 0 0 7px white, 0 0 5px rgb(25, 25, 236);
+    text-shadow: 0 0 7px white, 0 0 5px rgb(0, 245, 255);
 }
 
 .message-wrapper {
@@ -43,18 +43,18 @@ a {
 }
 
 .message {
-    color: blue;
+    color: rgb(255, 127, 63);
     font-family: 'Press Start 2P';
     font-size: 1rem;
     font-weight: 800;
     letter-spacing: .2rem;
     line-height: 1.5rem;
     text-align: center;
-    text-shadow: 2px 2px 2px rgb(199, 118, 117), 2px 4px 2px rgb(16, 16, 15);
+    text-shadow: 2px 2px 2px rgb(158, 26, 24), 2px 4px 2px rgb(16, 16, 15);
 }
 
 .game-grid {
-    background-color:rgba(219,0,140,1);
+    background-color:rgb(249, 72, 146);
     border: 3px solid black;
     box-shadow: rgba(50, 50, 93, 0.55) 0px 50px 100px -20px, rgba(0, 0, 0, 0.6) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     display: grid;
@@ -82,9 +82,9 @@ a {
     letter-spacing: 1rem;
     position: absolute;
     text-shadow: 0 0 30px black ,2px 2px 15px #222279, 0 0 2px black;
-    top: 30%;
-    left: 7%;
-    transform:rotate(-25deg);
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%,-50%) rotate(-25deg);
     text-align: center;
 }
 
@@ -94,7 +94,7 @@ a {
 
 .reset {
     z-index: 2;
-    background-color: #5555da;
+    background-color: rgb(137, 207, 253);
     border-radius: 10px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
