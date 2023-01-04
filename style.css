@@ -130,6 +130,7 @@ a {
     .game-grid {
         height: 500px;
         width: 500px;
+        border-radius: 10px;
     }
     
     .game-grid__box {
